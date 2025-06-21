@@ -1,6 +1,6 @@
 
 //------ EJERCICIO 05 -------
-export class Persona {
+export abstract class Persona {
     
     //Atributos
     public nombre:string;
@@ -10,7 +10,7 @@ export class Persona {
     public edad:string;
 
     //Métodos
-    constructor(nombre_p:string, apellido_p:string, direccion_p:string; tel:string, edad_p:string){
+    constructor(nombre_p:string, apellido_p:string, direccion_p:string, tel:string, edad_p:string){
         this.nombre = nombre_p;
         this.apellido = apellido_p;
         this.direccion = direccion_p;
@@ -28,7 +28,7 @@ export class Persona {
     }
 
     // Método abstracto
-    public abstract mostrarDatos(): void;
+    public abstract mostrarDatos():void;
 }
 
 //this => forma en que se accede al atributo y métodos de la clase; this hace referencia a la clase

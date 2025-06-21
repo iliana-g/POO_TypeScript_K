@@ -16,7 +16,16 @@ export class Cancion{
         console.log("   DATOS DE CANCIÓN");
         console.log(`Título: ${this.titulo}`);
         console.log(`Género: ${this.genero}`);
-        console.log(`Autor: ${this.autor}`);
+        console.log(`Autor: ${this.getAutor}`);
     }
 
+    //Setter
+    set setAutor(autor_nombre:string) {
+        this.autor = autor_nombre;
+    }
+
+    //Getter
+    get getAutor(){
+        return this.autor;
+    }
 }
