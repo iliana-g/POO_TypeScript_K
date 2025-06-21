@@ -4,7 +4,7 @@ export class Cancion{
     //Atributos:
     public titulo:string;
     public genero:string;
-    private autor:string;
+    private autor:string = "";
 
     //Métodos
     constructor (titulo_cancion:string, genero_cancion:string){
